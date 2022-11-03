@@ -27,7 +27,7 @@ for folders,sub_folders,files in os.walk(walk_path):
         #conditional to make sure that its an excel file and that it fits the desired file pattern
         if (
             (f.endswith(".xls"))
-            and (folders == sports_path or folders == non_sports_path or off_campus_path)
+            and (folders == sports_path or folders == non_sports_path or folders == off_campus_path)
             and re.search(file_pattern,f)
             and f not in omitted_clubs
             ):
